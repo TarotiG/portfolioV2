@@ -60,7 +60,7 @@ function FlipCard({
 const cards = [
     {
         title: 'TMAP Gecertificeerd',
-        imageSrc: '/resources/TMAP-certified.png',
+        imageSrc: '/flipcards/TMAP-certified.png',
         imageAlt: 'TMAP',
         backTitle: 'TMAP Certificaat',
         backDescription:
@@ -74,7 +74,7 @@ const cards = [
     },
     {
         title: 'Technisch en ervaren',
-        imageSrc: '/resources/technical-experienced.png',
+        imageSrc: '/flipcards/technical-experienced.png',
         imageAlt: 'Technical',
         backTitle: 'Ervaring & Expertise',
         backDescription:
@@ -89,7 +89,7 @@ const cards = [
     },
     {
         title: 'Vooruitstrevende mindset',
-        imageSrc: '/resources/progressive-mindset.png',
+        imageSrc: '/flipcards/progressive-mindset.png',
         imageAlt: 'Progressive',
         backTitle: 'Innovatie & Groei',
         backDescription:
@@ -104,7 +104,7 @@ const cards = [
     },
     {
         title: 'Quality above all',
-        imageSrc: '/resources/quality-above-all.png',
+        imageSrc: '/flipcards/quality-above-all.png',
         imageAlt: 'Quality',
         backTitle: 'Kwaliteit Voorop',
         backDescription:
@@ -152,7 +152,7 @@ export default function AboutMe() {
 // Kopieer daarna de afbeeldingen uit je oude project naar de `public/` map van je Next.js project. In Next.js gebruik je `public/` in plaats van `wwwroot/`:
 // ```
 // public/
-// └── resources/
+// └── flipcards/
 //     ├── TMAP-certified.png
 //     ├── technical-experienced.png
 //     ├── progressive-mindset.png

@@ -18,15 +18,19 @@ export default function LoginPage() {
         const result = await signIn('credentials', {
             email: (form.elements.namedItem('email') as HTMLInputElement).value,
             password: (form.elements.namedItem('password') as HTMLInputElement).value,
-            redirect: false,
+            redirect: true,
         })
 
-        if (result?.error) {
+        setLoading(false)
+
+        // @ts-ignore
+        if (!result || result.error) {
             setError('Ongeldige inloggegevens')
-            setLoading(false)
-        } else {
-            router.push('/admin')
+            return
         }
+
+        router.refresh()           // ← sessie opfrissen
+        router.push('/admin')
     }
 
     return (
