@@ -7,7 +7,7 @@ export default function Contact() {
                     Heb je een project of wil je samenwerken? Stuur me gerust een bericht.
                 </p>
                 <a
-                    href="mailto:jouw.email@domein.nl"
+                    href="mailto:tyronlsg@gmail.com"
                     className="inline-block bg-blue-500 hover:bg-blue-600 py-3 px-6 rounded-lg text-white transition font-medium"
                     >
                     Stuur een e-mail
@@ -16,21 +16,21 @@ export default function Contact() {
             {/* Social media links */}
             <div className="flex justify-center gap-6 mt-8">
                 <a
-                    href="https://linkedin.com/in/jouwprofiel"
+                    href="https://www.linkedin.com/in/tyron-gysbertha-bb623a177/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-gray-500 hover:text-blue-600 transition font-medium"
                     >
                     LinkedIn
                 </a>
-        <a
-                href="https://github.com/jouwprofiel"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-500 hover:text-blue-600 transition font-medium"
-                >
-                GitHub
-        </a>
+        {/*<a*/}
+        {/*        href="https://github.com/jouwprofiel"*/}
+        {/*        target="_blank"*/}
+        {/*        rel="noopener noreferrer"*/}
+        {/*        className="text-gray-500 hover:text-blue-600 transition font-medium"*/}
+        {/*        >*/}
+        {/*        GitHub*/}
+        {/*</a>*/}
 </div>
 </div>
 </section>

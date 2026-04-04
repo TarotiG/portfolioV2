@@ -5,8 +5,7 @@
    ======================== */
 .flip-card {
   perspective: 1000px;
-  height: 280px;
-  cursor: pointer;
+  height: 480px;
 }
 
 .flip-card-inner {
@@ -17,7 +16,8 @@
   transform-style: preserve-3d;
 }
 
-.flip-card.flipped .flip-card-inner {
+/* Hover versie */
+.flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
 }
 
@@ -37,34 +37,32 @@
 /* ========================
    Project animaties
    ======================== */
-.project-card {
-  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+.project-detail-enter {
+  animation: slideDown 0.4s ease forwards;
 }
 
-.project-card.hidden {
-  opacity: 0;
-  transform: scale(0.95);
-  pointer-events: none;
+.project-detail-exit {
+  animation: slideUp 0.3s ease forwards;
 }
 
-#project-detail {
-  opacity: 0;
-  transform: translateY(-20px);
-  transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
-  max-height: 0;
-  overflow: hidden;
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-#project-detail.show {
-  opacity: 1;
-  transform: translateY(0);
-  max-height: 2000px;
-}
-
-#list-projecten {
-  transition: opacity 0.5s ease-in-out;
-}
-
-#list-projecten.hidden {
-  opacity: 0;
+@keyframes slideUp {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-16px);
+  }
 }
