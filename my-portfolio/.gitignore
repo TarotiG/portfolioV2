@@ -17,7 +17,6 @@
 /.next/
 /out/
 auth.ts
-
 # production
 /build
 
