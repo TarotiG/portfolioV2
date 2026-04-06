@@ -6,8 +6,6 @@ import { resolve } from "path";
 
 config({ path: resolve(process.cwd(), '.env.local') })
 
-// Dit is jouw admin account — wachtwoord is gehasht
-// Genereer een hash met: node -e "require('bcryptjs').hash('182122portfolio', 10).then(console.log)"
 const hash = "$2b$10$NPeYqfEyihQg0P470khAPeYzAWxh0UlhSnKTPZ/dD.JejAiZFBIzq";
 
 export const { handlers, signIn, signOut, auth } = NextAuth({
